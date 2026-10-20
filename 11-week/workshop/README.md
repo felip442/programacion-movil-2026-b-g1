@@ -21,5 +21,5 @@ Necesita un archivo `app/.env` con `VITE_TMDB_API_KEY` y el backend de Movie Rat
 - CODE_REPO: https://github.com/code-corhuila/movie-rater
 - BASELINE: 43052c5
 - REFLECTION_DOC: https://docs.google.com/document/d/1tVlti_sQRuuzFZ4EMdaKI2-xsYkbDJeZRPl_3zeDTgY/edit?usp=sharing
-- MY_SCREENS:
+- MY_SCREENS:Login,profile
 <!-- CONFIG-END -->
