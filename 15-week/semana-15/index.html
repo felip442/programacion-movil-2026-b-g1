@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Semana 15 · Hardware y Conectividad</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="app-bar">
+      <h1>Semana 15</h1>
+      <nav class="tabs" role="tablist">
+        <button class="tab active" role="tab" aria-selected="true" data-target="pantalla-hardware">📍 Ubicación</button>
+        <button class="tab" role="tab" aria-selected="false" data-target="pantalla-conectividad">🌐 Usuarios</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===================== PROBLEMA 1 · HARDWARE ===================== -->
+      <section id="pantalla-hardware" class="pantalla" role="tabpanel">
+        <h2>Mi ubicación</h2>
+        <p class="ayuda">Usamos el GPS del dispositivo (plugin <code>@capacitor/geolocation</code>). Primero se pide permiso.</p>
+
+        <button id="btn-ubicacion" class="btn primario">Obtener mi ubicación</button>
+
+        <div id="geo-estado" class="tarjeta oculto" aria-live="polite"></div>
+      </section>
+
+      <!-- ===================== PROBLEMA 2 · CONECTIVIDAD ===================== -->
+      <section id="pantalla-conectividad" class="pantalla oculto" role="tabpanel">
+        <h2>Usuarios (API)</h2>
+        <p class="ayuda">Datos desde <code>jsonplaceholder.typicode.com</code> usando <code>fetch</code>.</p>
+
+        <label class="switch">
+          <input type="checkbox" id="chk-fallo" />
+          <span>Simular fallo de red</span>
+        </label>
+
+        <button id="btn-cargar" class="btn primario">Cargar usuarios</button>
+
+        <div id="api-estado" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
